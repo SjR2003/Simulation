@@ -8,8 +8,9 @@ x = dataset.data(:, 1:4);
 y = dataset.data(:, 5);
 
 %% Result
+tic;
 [regresor, theta] = forwardSelection(x, y);
-
+toc;
 
 fprintf('Selected Regressors: \n');
 disp(regresor)
